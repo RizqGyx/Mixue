@@ -370,13 +370,16 @@ main .wrap {
     margin-bottom: 1rem;
 }
 
-.article-title {
+.title {
     font-size: 3rem;
     text-align: center;
     color: #E11D48;
 }
 
-#sundae-item {
+#sundae-item, 
+#eskrim-item, 
+#smoothies-item, 
+#coffee-item {
     margin-top: 12px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -411,9 +414,8 @@ main .wrap {
 .card-img {
     height: 300px;
     width: 100%;
-    object-fit: cover;
+    object-fit: conta;
 }
-
 
 /* Main Sections Ends */
 
