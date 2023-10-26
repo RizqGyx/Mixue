@@ -1,11 +1,23 @@
 import { Card } from './components/cardUpdate.js'
 
 window.addEventListener("DOMContentLoaded", () => {
-    const sundae = document.getElementById("sundae-item");
-    const eskrim = document.getElementById("eskrim-item");
     const smoothies = document.getElementById("smoothies-item");
+    const eskrim = document.getElementById("eskrim-item");
+    const sundae = document.getElementById("sundae-item");
     const coffee = document.getElementById("coffee-item");
+    const fruit = document.getElementById("fruit-item");
+    const milk = document.getElementById("milk-item");
+    const tea = document.getElementById("tea-item");
 
+    smoothies.innerHTML += Card('Smoothies/Chocolate-Cookies-Smoothies-with-Ice-Cream-300x300.jpg', 'Coffee Ice Cream', '8.000', 'Coffee Ice Cream, a creamy delight infused with delicious coffee flavor');
+    smoothies.innerHTML += Card('Smoothies/Kiwi-Smoothies-mixue.jpg', 'Coffee Ice Cream', '8.000', 'Coffee Ice Cream, a creamy delight infused with delicious coffee flavor');
+    smoothies.innerHTML += Card('Smoothies/Mango-Smoothies-With-Ice-Cream.jpg', 'Coffee Ice Cream', '8.000', 'Coffee Ice Cream, a creamy delight infused with delicious coffee flavor');
+    smoothies.innerHTML += Card('Smoothies/Strawberry-Smoothies-With-Ice-Cream.jpg', 'Coffee Ice Cream', '8.000', 'Coffee Ice Cream, a creamy delight infused with delicious coffee flavor');
+    
+    eskrim.innerHTML += Card('Ice Cream/Mixed-ice-cream-Vanilla-Strawberry-Mixue-225x300.jpg', 'Mixed Ice Cream', '8.000', 'Mixed Vanilla and Strawberry Cone Ice Cream, a soft and delightful combination');
+    eskrim.innerHTML += Card('Ice Cream/strawberry-ice-cream-mixue.jpg', 'Strawberry Ice Cream', '8.000', 'Strawberry Cone Ice Cream, a soft and delightful treat');
+    eskrim.innerHTML += Card('Ice Cream/vanila-ice-cream-mixue.jpg', 'Vanila Ice Cream', '8.000', 'Vanilla Cone Ice Cream, a soft and delightful treat');
+    
     sundae.innerHTML += Card('Sundae/sundae.jpg', 'Sundae', '16.000', 'Soft and delicious Vanilla ice cream cone');
     sundae.innerHTML += Card('Sundae/Boba-Sundae.jpg', 'Boba Sundae', '16.000', 'Ice Cream with Brown Sugar Syrup Sauce and Chewy Boba Topping');
     sundae.innerHTML += Card('Sundae/Berry-Bean-Sundae.jpg', 'Berry Bean Sundae', '16.000', 'Ice Cream combined with soft Red Bean and sweet Strawberry jam');
@@ -15,16 +27,7 @@ window.addEventListener("DOMContentLoaded", () => {
     sundae.innerHTML += Card('Sundae/Oreo-Sundae.jpg', 'Oreo Sundae', '16.000', 'Ice Cream with chocolate and crunchy Oreo sprinkles');
     sundae.innerHTML += Card('Sundae/Strawberry-Lucky-Sundae.jpg', 'Strawberry Lucky Sundae', '16.000', 'Ice Cream with Strawberry sauce, fresh Strawberry chunks, and a surprise topping underneath');
     sundae.innerHTML += Card('Sundae/Strawberry-Sundae-Mixue.jpg', 'Strawberry Sundae', '16.000', 'Smooth and delicious Strawberry ice cream');
-    
-    eskrim.innerHTML += Card('Ice Cream/Mixed-ice-cream-Vanilla-Strawberry-Mixue-225x300.jpg', 'Mixed Ice Cream', '8.000', 'Mixed Vanilla and Strawberry Cone Ice Cream, a soft and delightful combination');
-    eskrim.innerHTML += Card('Ice Cream/strawberry-ice-cream-mixue.jpg', 'Strawberry Ice Cream', '8.000', 'Strawberry Cone Ice Cream, a soft and delightful treat');
-    eskrim.innerHTML += Card('Ice Cream/vanila-ice-cream-mixue.jpg', 'Vanila Ice Cream', '8.000', 'Vanilla Cone Ice Cream, a soft and delightful treat');
-    
-    smoothies.innerHTML += Card('Smoothies/Chocolate-Cookies-Smoothies-with-Ice-Cream-300x300.jpg', 'Coffee Ice Cream', '8.000', 'Coffee Ice Cream, a creamy delight infused with delicious coffee flavor');
-    smoothies.innerHTML += Card('Smoothies/Kiwi-Smoothies-mixue.jpg', 'Coffee Ice Cream', '8.000', 'Coffee Ice Cream, a creamy delight infused with delicious coffee flavor');
-    smoothies.innerHTML += Card('Smoothies/Mango-Smoothies-With-Ice-Cream.jpg', 'Coffee Ice Cream', '8.000', 'Coffee Ice Cream, a creamy delight infused with delicious coffee flavor');
-    smoothies.innerHTML += Card('Smoothies/Strawberry-Smoothies-With-Ice-Cream.jpg', 'Coffee Ice Cream', '8.000', 'Coffee Ice Cream, a creamy delight infused with delicious coffee flavor');
-    
+
     coffee.innerHTML += Card('Coffee/Coffee-Boba-Sundae.jpg', 'Coffee Boba Sundae', '18.000', 'Coffee Boba Sundae, coffee ice cream enhanced with chewy boba toppings for added indulgence');
     coffee.innerHTML += Card('Coffee/Coffee-Cookies-Sundae.jpg', 'Coffee Cookies Sundae', '18.000', 'Coffee Cookies Sundae, coffee ice cream enhanced with cookie toppings for added delight');
     coffee.innerHTML += Card('Coffee/Coffee-Ice-Cream.jpg', 'Coffee Ice Cream', '8.000', 'Coffee Ice Cream, a creamy delight infused with delicious coffee flavor');
@@ -32,4 +35,11 @@ window.addEventListener("DOMContentLoaded", () => {
     coffee.innerHTML += Card('Coffee/Lemon-Coffee.jpg', 'Lemon Coffee', '14.000', 'Lemon Coffee, a new coffee product with a hint of lemon for added freshness');
     coffee.innerHTML += Card('Coffee/Mixue-Americano-Coffee.jpg', 'Americano Coffee', '12.000', 'Delicious Americano Coffee');
     coffee.innerHTML += Card('Coffee/Mocha-Mi-Shake.jpg', 'Mocha Mi Shake', '16.000', 'Refreshing and delightful Mocha Mi-Shake');
+    
+    tea.innerHTML += Card('tea/Early-Grey-Tea-with-2-Toppings.jpg', 'Earl Grey Tea with 2 Toppings', '13.000', 'Coffee Boba Sundae, coffee ice cream enhanced with chewy boba toppings for added indulgence');
+    tea.innerHTML += Card('tea/Jasmine-Tea-With-2-Toppings.jpg', 'Jasmine Tea With 2 Toppings', '13.000', 'Coffee Boba Sundae, coffee ice cream enhanced with chewy boba toppings for added indulgence');
+    tea.innerHTML += Card('tea/Original-Earl-Grey-Tea.jpg', 'Original Earl Grey Tea', '10.000', 'Coffee Boba Sundae, coffee ice cream enhanced with chewy boba toppings for added indulgence');
+    tea.innerHTML += Card('tea/Original-Jasmine-Tea.jpg', 'Original Jasmine Tea', '10.000', 'Coffee Boba Sundae, coffee ice cream enhanced with chewy boba toppings for added indulgence');
+    tea.innerHTML += Card('tea/ice-cream-earl-grey-tea.jpg', 'Ice Cream Earl Grey Tea', '13.000', 'Coffee Boba Sundae, coffee ice cream enhanced with chewy boba toppings for added indulgence');
+    tea.innerHTML += Card('tea/Original-Jasmine-Tea.jpg', 'Ice Cream Jasmine Tea', '13.000', 'Coffee Boba Sundae, coffee ice cream enhanced with chewy boba toppings for added indulgence');
 });

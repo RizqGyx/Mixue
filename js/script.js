@@ -37,3 +37,15 @@ closeMenuLinks.forEach(function(link) {
         document.body.classList.remove("menu-open");
     });
 });
+
+const links = document.querySelectorAll('.side-bar-list ul li a');
+
+// Menambahkan event listener untuk setiap tautan
+links.forEach(link => {
+    link.addEventListener('click', (e) => {
+    // Menghapus kelas "clicked" dari semua tautan
+    links.forEach(l => l.classList.remove('clicked'));
+    // Menambahkan kelas "clicked" ke tautan yang diklik
+    link.classList.add('clicked');
+    });
+});

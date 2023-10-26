@@ -324,7 +324,7 @@ main .wrap {
     border-radius: 20px;
     position: sticky;
     top: 5rem;
-    height: 100vh;
+    height: 95vh;
     width: clamp(150px, 20%, 500px);
     text-align: center;
 }
@@ -353,6 +353,12 @@ main .wrap {
     padding: 5px 40px;
 }
 
+.side-bar-list > ul > li a.clicked {
+    background-color: #d0be9d;
+    border-radius: 20px;
+    color: #dddddd;
+}
+
 .side-bar > img {
     position: absolute;
     width: 100%;
@@ -376,10 +382,7 @@ main .wrap {
     color: #E11D48;
 }
 
-#sundae-item, 
-#eskrim-item, 
-#smoothies-item, 
-#coffee-item {
+.menu-items .item-wrap {
     margin-top: 12px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
