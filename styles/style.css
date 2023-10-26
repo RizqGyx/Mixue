@@ -8,6 +8,10 @@
     list-style: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
 }
@@ -407,17 +411,15 @@ main .wrap {
 
 .card .harga {
     color: #E11D48;
+    padding: 0 1rem;
 }
 
 .card .information {
-    text-align: justify;
     margin: 1rem;
 }
 
 .card-img {
-    height: 300px;
-    width: 100%;
-    object-fit: conta;
+    border-radius: 5px;
 }
 
 /* Main Sections Ends */
@@ -698,14 +700,6 @@ footer img {
         width: 100%;
         height: auto;
     }
-
-    .article-content {
-        text-align: center;
-    }
-
-    .article-title {
-        font-size: 1.5rem;
-    }
 }
 
 @media screen and (min-width: 601px) {
@@ -719,14 +713,6 @@ footer img {
         height: 300px;
         width: 100%;
         object-fit: cover;
-    }
-
-    .article-content {
-        text-align: left;
-    }
-
-    .article-title {
-        font-size: 3rem;
     }
 }
 
