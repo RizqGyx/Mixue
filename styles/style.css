@@ -222,6 +222,23 @@ main aside .social-media a:hover {
     color: #BFB0A0;
 }
 
+#scrollToTop {
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    display: none;
+    z-index: 99;
+}
+
+#scrollToTop a {
+    text-decoration: none;
+    background-color: #E11D48;
+    color: #dddddd;
+    border-radius: 50%;
+    padding: 16px 20px;
+    font-size: 16px;
+}
+
 main .content {
     display: flex;
     flex-direction: column;
@@ -309,7 +326,7 @@ main .wrap {
     background-color: #f43f5e;
 }
 
-#menu {
+#menu, #promotions, #merchandise{
     width: 80%;
     padding-top: 100px;
 }
@@ -533,6 +550,12 @@ footer img {
 /* Footer Sections Ends */
 
 /* Media Query For Non Web Interfaces */
+@media screen and (max-width: 1440px){
+    .side-bar-list > h2 {
+        padding: 0;
+    }
+}
+
 @media screen and (max-width: 1200px){
     .hero-title {
         font-size: 2rem;
@@ -599,6 +622,22 @@ footer img {
 
     .description .btn {
         margin-top: 1rem;
+    }
+
+    .side-bar{
+        height: 90vh;
+    }
+
+    .side-bar-list > h2 {
+        font-size: 1.5rem;
+    }
+
+    .side-bar-list > ul > li {
+        font-size: 1rem;
+    }
+
+    .side-bar-list > ul > li a {
+        padding: 5px 20px;
     }
 }
 
@@ -716,6 +755,16 @@ footer img {
     }
 }
 
+@media screen and (max-width: 520px){
+    .side-bar {
+        display: none;
+    }
+
+    .menu-items .item-wrap{
+        grid-template-columns: auto;
+    }
+}
+
 @media screen and (max-width: 360px){
     .home .wrapper {
         flex-direction: column-reverse;
@@ -744,4 +793,5 @@ footer img {
         font-weight: bold;
         color: white;
     }
+
 }

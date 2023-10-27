@@ -49,3 +49,25 @@ links.forEach(link => {
     link.classList.add('clicked');
     });
 });
+
+const scrollToTopButton = document.getElementById("scrollToTop");
+
+// Tampilkan tombol saat halaman di-scroll ke bawah
+window.addEventListener("scroll", function() {
+    if (window.scrollY > 200) { // Anda dapat mengatur jumlah piksel yang diperlukan untuk menampilkan tombol
+        scrollToTopButton.style.display = "block";
+    } else {
+        scrollToTopButton.style.display = "none";
+    }
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    var sideBarList = document.querySelector(".side-bar-list");
+    var links = sideBarList.querySelectorAll("ul li a");
+
+    window.addEventListener("scroll", function() {
+        links.forEach(function(link) {
+            link.classList.remove("clicked");
+        });
+    });
+});
