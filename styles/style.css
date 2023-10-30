@@ -450,6 +450,7 @@ main .wrap {
 }
 
 .promotions-list {
+    position: relative;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -730,6 +731,11 @@ footer img {
     .side-bar-list > ul > li a {
         padding: 5px 20px;
     }
+
+    .promotions-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 }
 
 @media screen and (max-width: 800px){
@@ -792,6 +798,18 @@ footer img {
         display: none;
     }
 
+    .discount-content {
+        padding: .1rem;
+    }
+
+    .discount {
+        font-size: 3rem;
+    }
+
+    .discount-content {
+        width: 50%;
+    }
+
     .footer-distributed {
         flex-direction: column;
         text-align: center;
@@ -834,6 +852,45 @@ footer img {
     .promotions-list {
         display: block;
     }
+
+    .prev, .next {
+        position: absolute;
+        cursor: pointer;
+        padding: 16px;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+    
+    .next {
+        right: 0;
+        top: 50%;
+        background-color: rgba(0,0,0,0.8);
+        color: white;
+        border-radius: 3px 0 0 3px;
+    }
+    
+    .prev {
+        left: 0;
+        top: 50%;
+        background-color: rgba(0,0,0,0.8);
+        color: white;
+    }
+    
+    .prev:hover, .next:hover {
+        background-color: black;
+    }
+
+    .discount {
+        font-size: 3.5rem;
+    }
+
+    .discount-content {
+        padding: 1rem 0.1rem;
+    }
+
 }
 
 @media screen and (min-width: 601px) {
@@ -847,6 +904,10 @@ footer img {
         height: 300px;
         width: 100%;
         object-fit: cover;
+    }
+
+    .prev, .next {
+        display: none;
     }
 }
 
