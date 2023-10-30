@@ -19,6 +19,7 @@ function showSlides() {
     setTimeout(showSlides, 4000); // Change image seconds Handling
 }
 
+// Menu Responsive
 const menuToggle = document.querySelector(".menu-toogle");
 const closeMenuLinks = document.querySelectorAll(".close-menu");
 
