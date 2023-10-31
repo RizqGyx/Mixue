@@ -55,7 +55,7 @@ const scrollToTopButton = document.getElementById("scrollToTop");
 
 // Tampilkan tombol saat halaman di-scroll ke bawah
 window.addEventListener("scroll", function() {
-    if (window.scrollY > 200) { // Anda dapat mengatur jumlah piksel yang diperlukan untuk menampilkan tombol
+    if (window.scrollY > 200) {
         scrollToTopButton.style.display = "block";
     } else {
         scrollToTopButton.style.display = "none";
